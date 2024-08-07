@@ -17,8 +17,8 @@ class App extends Component {
       feed: [
         {
           id: '1',
-          name: 'Lucas Silva',
-          description: 'Mais um dia de muitos bugs :)',
+          name: 'Luke Cage',
+          description: 'Another day with a lot of bugs :)',
           profileImg:
             'https://sujeitoprogramador.com/instareact/fotoPerfil1.png',
           postImg: 'https://sujeitoprogramador.com/instareact/foto1.png',
@@ -27,8 +27,8 @@ class App extends Component {
         },
         {
           id: '2',
-          name: 'Matheus',
-          description: 'Isso sim é ser raiz!!!!!',
+          name: 'Matthew',
+          description: 'That is the real gaming pc!!!!!',
           profileImg:
             'https://sujeitoprogramador.com/instareact/fotoPerfil2.png',
           postImg: 'https://sujeitoprogramador.com/instareact/foto2.png',
@@ -37,8 +37,8 @@ class App extends Component {
         },
         {
           id: '3',
-          name: 'Jose Augusto',
-          description: 'Bora trabalhar Haha',
+          name: 'David Johson',
+          description: 'Let\'s Work Haha',
           profileImg:
             'https://sujeitoprogramador.com/instareact/fotoPerfil3.png',
           postImg: 'https://sujeitoprogramador.com/instareact/foto3.png',
@@ -47,8 +47,8 @@ class App extends Component {
         },
         {
           id: '4',
-          name: 'Gustavo Henrique',
-          description: 'Isso sim que é TI!',
+          name: 'Maxwell Smith',
+          description: 'That is I.T!',
           profileImg:
             'https://sujeitoprogramador.com/instareact/fotoPerfil1.png',
           postImg: 'https://sujeitoprogramador.com/instareact/foto4.png',
@@ -57,8 +57,8 @@ class App extends Component {
         },
         {
           id: '5',
-          name: 'Guilherme',
-          description: 'Boa tarde galera do insta...',
+          name: 'Alfred',
+          description: 'Good Morning Instagrammers...',
           profileImg:
             'https://sujeitoprogramador.com/instareact/fotoPerfil2.png',
           postImg: 'https://sujeitoprogramador.com/instareact/foto5.png',
@@ -83,6 +83,7 @@ class App extends Component {
 
         <FlatList
         showsVerticalScrollIndicator={false}
+        keyExtractor={(item) => item.id}
         data={this.state.feed}
         renderItem={({item}) => <List data={item} />}
         />
